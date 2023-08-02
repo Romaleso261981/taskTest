@@ -1,0 +1,189 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  &_logo{
+    margin-left: auto;
+    margin-right: 170px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 102px;
+    width: 100%;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+
+.menu {
+  padding-right: 15px;
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    padding-right: 45px;
+    padding-left: 35px;
+  }
+  &__list-link {
+    @extend %title-font;
+    color: rgba(54, 56, 56, 0.9033);
+    line-height: 22px;
+  }
+  &__list-link--active {
+    padding-bottom: 4px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      border-radius: 1px;
+      background-color: rgba($title, 0.7);
+    }
+  }
+}
+
+.project{
+  width: 100%;
+  height: 100%;
+  &_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &_title{
+    font-weight: 600;
+    font-size: 44px;
+    width: 194px;
+    height: 64px;
+  }
+  &_title--span{
+    font-weight: 600;
+    font-size: 44px;
+    width: 194px;
+    height: 64px;
+  }
+  &_images{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.ourProject{
+  &_title{
+    font-weight: 600;
+    font-size: 44px;
+    width: 427px;
+    height: 64px;
+  }
+  &_title--span{
+    font-weight: 600;
+    font-size: 44px;
+    width: 194px;
+    height: 64px;
+  }
+  &_imgWrapper{
+    gap: 20px;
+  }
+  &_images{
+    width: 200px;
+    height: 200px;
+  }
+  &_img5{
+    width: 570px;
+    height: 255px;
+    background-color: #000000;
+  }
+  &_img1{
+    width: 570px;
+    height: 255px;
+  }
+  &_img2{
+    width: 270px;
+    height: 255px;
+  }
+  &_img3{
+    width: 470px;
+    height: 255px;
+  }
+  &_img4{
+    width: 370px;
+    height: 255px;
+  }
+  &_btn{
+    width: 200px;
+    height: 50px;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+
+.contactUs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  &_form{
+    display: flex;
+    flex-direction: column;
+    width: 491px;
+    gap: 10px;
+  }
+  &_form-input{
+    height: 45px;
+  }
+  &_form-placeholder{
+    height: 147px;
+  }
+}
+
+.footer {
+
+  &_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 50px;
+  }
+  &_logo{
+    margin-left: auto;
+    margin-right: 170px;
+  }
+  &_ourInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__content {
+    background-color: #dfdfdf;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
