@@ -1,22 +1,10 @@
-html,
-body {
-  height: 100%;
-}
-
-body {
+html,body {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
   font-size: 16px;
-  line-height: 27px;
-  color: $default;
-  overflow-x: hidden;
-  min-width: 320px;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  line-height: 24px;
 }
 
 .container-fluid {
@@ -25,35 +13,28 @@ body {
   padding: 0 15px;
 }
 
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+}
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  li{
-    padding: 0 15px;
-  }
-  
-  button{
-    background-color: black;
-    border: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    padding: 0;
-    font-style: 0;
-  }
-  li.slick-active{
-    text-align: center;
-    align-items: center;
-    button{
-    background-color: rgb(15, 40, 230);
-    color: #ffffff;
-  }
-  }
+  @media screen and (min-width: 420px) {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 10px;
+ }
+  @media screen and (min-width: 768px) {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5px;
+ }
 }
