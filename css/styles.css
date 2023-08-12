@@ -1,0 +1,66 @@
+/*Обнулення стилів*/
+
+* {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	 box-sizing: border-box;
+}
+
+/*Загальні стилі =================================================================================================================*/
+
+body {
+	 font-family: 'Roboto', sans-serif;
+	 font-size: 16px;
+	 line-height: 1.6;
+	 color: #333;
+	 background-color: #f5f5f5;
+}
+
+h1,
+h2,
+h3 {
+	 margin: 0;
+	 padding: 0;
+	 font-family: 'Roboto', sans-serif;
+	 font-weight: 400;
+}
+
+p {
+	 margin: 0;
+	 padding: 0;
+}
+
+img {
+	 max-width: 100%;
+	 height: auto;
+}
+
+ul {
+	 list-style: none;
+}	
+
+a {
+	 text-decoration: none;
+	 color: inherit;
+}	
+
+button {
+	 border: none;
+	 outline: none;
+	 cursor: pointer;
+}	
+
+input {
+	 outline: none;
+}	
+
+.wrapper {
+	 max-width: 1200px;
+	 margin: 0 auto;
+	 padding: 0 15px;
+}
